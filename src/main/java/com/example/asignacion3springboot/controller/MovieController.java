@@ -2,6 +2,8 @@ package com.example.asignacion3springboot.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.example.asignacion3springboot.model.*;
+
 
 @RestController
 public class MovieController {
