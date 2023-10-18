@@ -8,12 +8,12 @@ import com.example.asignacion3springboot.model.*;
 @RestController
 public class MovieController {
 
-    @GetMapping("peliculas")
+    @GetMapping("/peliculas")
     public ResponseEntity<?> getPeliculas(){
         return ResponseEntity.status(200).body("peliculas");
     }
 
-    @GetMapping("pelicula/{id}")
+    @GetMapping("/pelicula/{id}")
     public ResponseEntity<?> getPeliculaById(@PathVariable String id){
         return ResponseEntity.status(200).body("pelicula");
     }

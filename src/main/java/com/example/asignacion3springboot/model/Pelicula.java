@@ -11,11 +11,11 @@ public class Pelicula {
     private String director;
     private LocalDate lunchDate;
 
-    public Pelicula(long id, String name, String genre, String director){
+    public Pelicula(long id, String name, String genre, String director, LocalDate date){
         this.name=name;
         this.genre=genre;
         this.director=director;
-        lunchDate=LocalDate.now();
+        lunchDate=date;
     }
 
     public long getId() {
